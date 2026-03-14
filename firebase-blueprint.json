@@ -1,0 +1,53 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User profile information",
+      "type": "object",
+      "properties": {
+        "username": { "type": "string" },
+        "email": { "type": "string" },
+        "signupDate": { "type": "string", "format": "date-time" }
+      },
+      "required": ["email", "signupDate"]
+    },
+    "Manuscript": {
+      "title": "Manuscript",
+      "description": "Digitized manuscript data",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "imageUrl": { "type": "string" },
+        "rawText": { "type": "string" },
+        "cleanedText": { "type": "string" },
+        "summary": { "type": "string" },
+        "translatedText": { "type": "string" },
+        "entities": {
+          "type": "object",
+          "properties": {
+            "kings": { "type": "array", "items": { "type": "string" } },
+            "places": { "type": "array", "items": { "type": "string" } },
+            "temples": { "type": "array", "items": { "type": "string" } },
+            "events": { "type": "array", "items": { "type": "string" } },
+            "dynasties": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "historicalInsight": { "type": "string" },
+        "uploadDate": { "type": "string", "format": "date-time" },
+        "language": { "type": "string" },
+        "confidence": { "type": "number" }
+      },
+      "required": ["userId", "imageUrl", "uploadDate"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "User profiles"
+    },
+    "/manuscripts/{manuscriptId}": {
+      "schema": "Manuscript",
+      "description": "Global manuscripts collection (filtered by userId)"
+    }
+  }
+}

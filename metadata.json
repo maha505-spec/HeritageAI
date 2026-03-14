@@ -1,0 +1,7 @@
+{
+  "name": "HeritageAI",
+  "description": "Ancient manuscript digitalization system using AI for OCR, NLP, and knowledge extraction.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
