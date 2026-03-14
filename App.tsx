@@ -46,7 +46,7 @@ import {
   orderBy
 } from 'firebase/firestore';
 import { analyzeManuscript, ManuscriptAnalysis } from './geminiService';
-import KnowledgeGraph from './components/KnowledgeGraph';
+import KnowledgeGraph from './KnowledgeGraph';
 import { useDropzone } from 'react-dropzone';
 import Markdown from 'react-markdown';
 
