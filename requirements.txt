@@ -1,0 +1,28 @@
+# HeritageAI - Project Requirements (Node.js/TypeScript)
+# This project uses npm for dependency management. 
+# The equivalent of requirements.txt is package.json.
+
+# Core Dependencies
+react >= 19.0.0
+react-dom >= 19.0.0
+react-router-dom >= 7.13.1
+firebase >= 12.10.0
+@google/genai >= 1.29.0
+framer-motion >= 12.36.0
+lucide-react >= 0.546.0
+d3 >= 7.9.0
+recharts >= 3.8.0
+react-dropzone >= 15.0.0
+react-markdown >= 10.1.0
+
+# Styling
+tailwindcss >= 4.1.14
+clsx >= 2.1.1
+tailwind-merge >= 3.5.0
+
+# Backend & Tooling
+express >= 4.21.2
+dotenv >= 17.2.3
+vite >= 6.2.0
+typescript >= 5.8.2
+tsx >= 4.21.0
