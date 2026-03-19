@@ -8,7 +8,15 @@ export default defineConfig(({mode}) => {
   return {
     plugins: [react(), tailwindcss()],
     define: {
-      'const apiKey = import.meta.env.VITE_GEMINI_API_KEY;,
+      'If you really cannot add it (backup solution)
+
+Use this temporary workaround (for submission only):
+
+⚠️ Hardcode API key (NOT secure, but acceptable for college demo)
+
+In your code:
+
+const apiKey = "your_api_key_here";;,
     },
     resolve: {
       alias: {
